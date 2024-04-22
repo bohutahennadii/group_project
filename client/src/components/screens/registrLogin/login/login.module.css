@@ -1,0 +1,60 @@
+.wrapper{
+  margin-top: 8%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.LoginWrapper p{
+  margin-bottom: 20px ;
+  font-size: 40px;
+  font-weight: bold;
+  color: #4886D9;
+}
+.LoginWrapper{
+  width: 600px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #4886D9;
+  border-radius: 30px;
+  
+}
+.LoginWrapper label{
+  font-size: 15px;
+  font-weight: bold;
+  color: #4886D9;
+}
+.LoginWrapper form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.LoginWrapper input{
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #4886D9;
+  margin-bottom: 20px;
+}
+.LoginWrapper button{
+  width: 300px;
+  height: 40px;
+  background-color: #4886D9;
+  border-radius: 10px;
+  border:none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  
+}
+
+.LoginWrapper button:hover{
+  background-color: #fff;
+  color: #4886D9;
+  border: 1px solid #4886D9;
+}
