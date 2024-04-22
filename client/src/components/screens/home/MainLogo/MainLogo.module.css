@@ -1,0 +1,49 @@
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15%;
+  align-items: center;
+}
+.logo img{
+  width: 350px;
+  height: 350px;
+  margin-right: 100px;
+}
+.Text {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.Text h1{
+  font-size: 3rem;
+  
+}
+.Text p {
+  font-size: 1.5rem;
+}
+
+
+.addOgl{
+  width: 330px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #4886D9;
+  border: none;
+  border-radius: 30px;
+  color: #FFFFFF;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.addOgl:hover{
+  background-color: #FFFFFF;
+  color: #4886D9;
+  border: 2px solid #4886D9;
+}
