@@ -1,12 +1,14 @@
 import MainLogo from "./MainLogo/MainLogo"
 import Announcement from "./announcement/announcement"
 import Header from "./header/header"
+import Footer from "./footer/footer"
 
 function Home() {
   return(
-    <><><Header />
+    <><><><Header />
       <MainLogo /></>
-      <Announcement/></>
+      <Announcement /></>
+      <Footer /></>
     
   )
   

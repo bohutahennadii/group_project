@@ -1,0 +1,44 @@
+.FooterWrapper{
+  margin-top: 5%;
+  padding: 3%;
+  display: flex;
+  background-color: #C9DCF4;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.AboutUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+  width: 400px;
+}
+.AboutUs h2{
+  color: #5288F2;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.Contacts {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-self: center;
+  width: 430px;
+  height: 220px;
+  background-color: #fff;
+  border-radius:35px;
+  padding: 15px;
+
+}
+.ContactsText p{
+  color: #4886D9;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+} 
+.phone ,.email{
+  display: flex;
+  justify-content: space-between;
+}
