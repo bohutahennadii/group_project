@@ -1,24 +1,28 @@
 import style from './registr.module.css'
+import { NavLink } from 'react-router-dom';
+
 function Registr(){
   return(
     <div className={style.wrapper}>
         <div className={style.regWrapper}>
-          <p>Sign up</p>
-          <form action="">
-            <label htmlFor="FirstName">First Name</label>
-            <input type="text" name ="FirstName" id="FirstName"/>
-            <label htmlFor="LastName">Last Name</label>
-            <input type="text" name ="LastName" id="LastName"/>
-            <label htmlFor="email">Email</label>
-            <input type="email"  name="email" id="email"/>
-            <label htmlFor="phone">Phone</label>
-            <input type="text" name="phone" id="phone"/>
-            <label htmlFor="password">Password</label>
-            <input type="password" name="password" id="password"/>
-            <label htmlFor="sumbitPass">Repeat Password</label>
-            <input type="password" name="sumbitPass" id="sumbitPass"/>
-            <button>Реєстрація</button>
-          </form>
+          <div className={style.signUp}>
+              <p>Реєстрація</p>
+              <form action="">
+                
+                <input type='text' id='FirstName' name='FirstName' placeholder='Введіть ім’я' required/>
+                <input type="text" name="LastName" id="LastName" placeholder='Введіть прізвище' />
+                <input type='email' id='email' name='email' placeholder='Введіть електронну адресу' required/>
+                <input type="password" id='password' name='password' placeholder='Введіть пароль' required/>
+                <input type="password"  id='repeatPassword' name='repeatPassword' placeholder='Повторіть пароль'/>
+                <button>Реєстрація</button>
+
+              </form>
+          </div>
+          <div className={style.offerSignIn}>
+              <h2>Ternopil lost&found</h2>
+              <p>Якщо у вас вже є заєстрований обліковий запис, то виконайте вхід.</p>
+              <NavLink to='/login'><button>Вхід</button></NavLink>
+          </div>
 
         </div>
       </div>
