@@ -23,7 +23,7 @@ function PageAddAnnouncement(){
     e.preventDefault();
     try {
       // Змінено URL на адресу JSON-сервера
-      await axios.post('http://localhost:3000/users', formData);
+      await axios.post('http://localhost:5026', formData);
       console.log('Дані успішно відправлені на сервер');
     } catch (error) {
       console.error('Помилка відправлення даних на сервер:', error);
@@ -36,19 +36,20 @@ function PageAddAnnouncement(){
       <form onSubmit={handleSubmit}>
         <label>
           Ім'я:
-          <input type="text" name="name" value={formData.name} onChange={handleChange} />
+          <input type="text" name="FirtName" value={formData.FirstName} onChange={handleChange} />
         </label>
         <label>
-          Вік:
-          <input type="number" name="age" value={formData.age} onChange={handleChange} />
+          LastName:
+          <input type="text" name="LastName" value={formData.LastName} onChange={handleChange} />
         </label>
         <label>
-          Посада:
-          <input type="text" name="job" value={formData.job} onChange={handleChange} />
+          Email:
+          <input type="text" name="email" value={formData.Email} onChange={handleChange} />
         </label>
         <label>
-          Зарплата:
-          <input type="number" name="salary" value={formData.salary} onChange={handleChange} />
+          password:
+          <input type="text" name="password" value={formData.Password} onChange={handleChange} />
+
         </label>
         <button type="submit">Додати користувача</button>
       </form>
