@@ -1,3 +1,4 @@
+import React from 'react'
 import style from './registr.module.css'
 import { NavLink } from 'react-router-dom';
 

@@ -1,3 +1,5 @@
+import React from 'react'
+
 import MainLogo from "./MainLogo/MainLogo"
 import Announcement from "./announcement/announcement"
 import Header from "./header/header"

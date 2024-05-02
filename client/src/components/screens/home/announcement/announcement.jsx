@@ -1,3 +1,5 @@
+import React from 'react'
+
 import style from './announcement.module.css'
 import { announcementItem } from './announcement.data'
 import { FaPhoneAlt } from "react-icons/fa";

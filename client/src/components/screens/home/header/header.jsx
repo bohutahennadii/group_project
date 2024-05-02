@@ -1,3 +1,4 @@
+import React from 'react'
 import style from './header.module.css'
 import { CiSquarePlus } from "react-icons/ci";
 import { NavLink } from 'react-router-dom';
@@ -10,7 +11,7 @@ function Header() {
         <p>Ternopil Lost&found</p>
       </div>
       <div className={style.registrBtn}>
-        <button className={style.addOgl}>Додати оголошення<CiSquarePlus style={{width:30,height:30}}/></button>
+        <NavLink to='/addAnnouncement'><button className={style.addOgl}>Додати оголошення<CiSquarePlus style={{width:30,height:30}}/></button></NavLink>
         <div style={{display:'flex'}}>
           <NavLink to='/login'><button  className={style.signIn}>Вхід</button></NavLink>
           <NavLink to='/registr'><button className={style.signUp}>Реєстрація аккаунту</button></NavLink>
