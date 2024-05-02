@@ -1,60 +1,109 @@
 .wrapper{
-  margin-top: 8%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
   display: flex;
-  align-self: center;
-  align-items: center;
-  align-content: center;
   justify-content: center;
-}
-.LoginWrapper p{
-  margin-bottom: 20px ;
-  font-size: 40px;
-  font-weight: bold;
-  color: #4886D9;
+  align-items: center;
+  background: linear-gradient(to right,#fff ,#c9dbff);
+  
 }
 .LoginWrapper{
-  width: 600px;
-  height: 700px;
+  display: flex;
+  justify-content: space-between;
+  width: 950px;
+  height: 620px;
+  border-radius: 35px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.offerSignUp{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 3px solid #4886D9;
-  border-radius: 30px;
-  
+  width: 500px;
+  background-color: #5288F2;
+  border-radius: 30% 35px 35px 30%;
 }
-.LoginWrapper label{
-  font-size: 15px;
-  font-weight: bold;
-  color: #4886D9;
-}
-.LoginWrapper form{
+.signIn{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.signIn form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 200px;
+}
+
+.signIn input{
+  
+  border-radius: 10px;
+  width: 320px;
+  height: 40px;
+  border: none;
+  background-color: #EEEEEE;
+}
+.signIn button{
+  width: 160px;
+  height: 40px;
+  background-color: #5288F2;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px
+}
+
+.signIn button:hover{
+  background-color: #fff;
+  color: #5288F2;
+  border: 1px solid #5288F2;
+}
+.signIn form a{
+  color:#3a3a3a;
+  font-weight: 300;
+  font-size:0.9rem;
 
 }
-.LoginWrapper input{
-  width: 300px;
-  height: 40px;
-  border-radius: 10px;
-  border: 1px solid #4886D9;
-  margin-bottom: 20px;
-}
-.LoginWrapper button{
-  width: 300px;
-  height: 40px;
-  background-color: #4886D9;
-  border-radius: 10px;
-  border:none;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: bold;
+.signIn p{
+  color: #5288F2;
+  font-size: 2.2rem;
+  font-weight: 600;
   
 }
 
-.LoginWrapper button:hover{
-  background-color: #fff;
-  color: #4886D9;
-  border: 1px solid #4886D9;
+
+.offerSignUp h2{
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 600;
+  
+}
+.offerSignUp p{
+  width: 350px;
+  color: #fff;
+  font-size: 1rem;
+  margin:50px 0 30px 0;
+}
+
+.offerSignUp button{
+  width: 160px;
+  height: 40px;
+  background-color: white;
+  color: #5288F2;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+}
+
+.offerSignUp button:hover{
+  background-color: #5288F2;
+  color: white;
+  border: 1px solid white;
 }

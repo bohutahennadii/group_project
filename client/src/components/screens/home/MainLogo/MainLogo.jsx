@@ -1,3 +1,5 @@
+import React from 'react'
+
 import style from './MainLogo.module.css'
 import { CiSquarePlus } from "react-icons/ci";
 

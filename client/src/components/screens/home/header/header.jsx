@@ -1,3 +1,4 @@
+import React from 'react'
 import style from './header.module.css'
 import { CiSquarePlus } from "react-icons/ci";
 import { NavLink } from 'react-router-dom';
