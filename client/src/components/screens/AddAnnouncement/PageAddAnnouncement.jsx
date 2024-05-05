@@ -3,55 +3,39 @@ import React from 'react'
 import axios from 'axios';
 import { useState } from 'react';
 
-function PageAddAnnouncement(){
-  const [formData, setFormData] = useState({
-    name: '',
-    age: 0,
-    job: '',
-    salary: 0
-  });
+function PageAddAnnouncement() {
+  const [file, setFile] = useState(null);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
+  const handleFileChange = (e) => {
+    const selectedFile = e.target.files[0];
+    setFile(selectedFile);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Змінено URL на адресу JSON-сервера
-      await axios.post('http://localhost:5026', formData);
-      console.log('Дані успішно відправлені на сервер');
+      const formData = new FormData();
+      formData.append('photo', file);
+
+      await axios.post('http://localhost:3001/upload', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
+      });
+      console.log('Файл успішно відправлений на сервер');
     } catch (error) {
-      console.error('Помилка відправлення даних на сервер:', error);
+      console.error('Помилка відправлення файлу на сервер:', error);
     }
   };
-  
 
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <label>
-          Ім'я:
-          <input type="text" name="FirtName" value={formData.FirstName} onChange={handleChange} />
-        </label>
-        <label>
-          LastName:
-          <input type="text" name="LastName" value={formData.LastName} onChange={handleChange} />
-        </label>
-        <label>
-          Email:
-          <input type="text" name="email" value={formData.Email} onChange={handleChange} />
-        </label>
-        <label>
-          password:
-          <input type="text" name="password" value={formData.Password} onChange={handleChange} />
-
-        </label>
-        <button type="submit">Додати користувача</button>
+        <input type="file" onChange={handleFileChange} />
+        <input type="text" />
+        <input type="text" />
+        <input type="tel" />
+        <button type="submit">SEND</button>
       </form>
     </div>
   );
