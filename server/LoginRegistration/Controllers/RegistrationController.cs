@@ -83,5 +83,14 @@ namespace LoginRegistration.Controllers
             Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type");
             return Ok();
         }
+        [HttpOptions]
+        [Route("registration")]
+        public IActionResult RegistrationOptions()
+        {
+            Response.Headers.Add("Access-Control-Allow-Origin", "http://localhost:5173/registr"); // Змініть на адресу вашого React проекту
+            Response.Headers.Add("Access-Control-Allow-Methods", "POST");
+            Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type");
+            return Ok();
+        }
     }
 }

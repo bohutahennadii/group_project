@@ -25,12 +25,16 @@ function Registr(){
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5042/api/Registration/registration', formData);
+      const response = await axios.post('http://localhost:5042/api/Registration/registration', formData, {
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*' }
+        });
       console.log('Успішно відправлено:', response.data);
     } catch (error) {
       console.error('Помилка відправки:', error);
     }
-  };
+  }; 
   
 
 
