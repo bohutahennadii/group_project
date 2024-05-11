@@ -29,7 +29,9 @@
 
             </div>
             <div class="form-group">
-                <input type="file" name="ImageFile" required />
+                <label asp-for="Photo" class="control-label"></label>
+                <input type="file" asp-for="Photo" class="form-control" />
+                <span asp-validation-for="Photo" class="text-danger"></span>
             </div>
             
             <div class="form-group">

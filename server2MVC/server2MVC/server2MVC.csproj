@@ -14,7 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Grpc.Core" Version="2.46.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.18" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.18">
       <PrivateAssets>all</PrivateAssets>
@@ -24,7 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Image\" />
     <Folder Include="wwwroot\Image\" />
   </ItemGroup>
 

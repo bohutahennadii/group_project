@@ -21,9 +21,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.isActive)
             </th>
-            <th> 
-                @Html.DisplayNameFor(model => model.ImageFile)
-            </th>
             
             <th></th>
         </tr>
@@ -39,9 +36,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.isActive)
-            </td>
-            <td>
-                    <img src="@Url.Content(item.ImagePath)" alt="Image" />
             </td>
            
             <td>

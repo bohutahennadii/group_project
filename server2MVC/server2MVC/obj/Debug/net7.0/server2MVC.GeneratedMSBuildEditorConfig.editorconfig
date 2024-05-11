@@ -9,87 +9,87 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = server2MVC
 build_property.RootNamespace = server2MVC
-build_property.ProjectDir = D:\project\server2MVC\server2MVC\
+build_property.ProjectDir = /Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\project\server2MVC\server2MVC
+build_property.MSBuildProjectDirectory = /Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/project/server2MVC/server2MVC/Views/Advertismnets/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNtbmV0c1xDcmVhdGUuY3NodG1s
+[/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/Views/Advertismnets/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWR2ZXJ0aXNtbmV0cy9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/project/server2MVC/server2MVC/Views/Advertismnets/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNtbmV0c1xEZWxldGUuY3NodG1s
+[/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/Views/Advertismnets/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWR2ZXJ0aXNtbmV0cy9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/project/server2MVC/server2MVC/Views/Advertismnets/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNtbmV0c1xEZXRhaWxzLmNzaHRtbA==
+[/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/Views/Advertismnets/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWR2ZXJ0aXNtbmV0cy9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/project/server2MVC/server2MVC/Views/Advertismnets/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNtbmV0c1xFZGl0LmNzaHRtbA==
+[/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/Views/Advertismnets/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWR2ZXJ0aXNtbmV0cy9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/project/server2MVC/server2MVC/Views/Advertismnets/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNtbmV0c1xJbmRleC5jc2h0bWw=
+[/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/Views/Advertismnets/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWR2ZXJ0aXNtbmV0cy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/project/server2MVC/server2MVC/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/project/server2MVC/server2MVC/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/project/server2MVC/server2MVC/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/project/server2MVC/server2MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/project/server2MVC/server2MVC/Views/Users/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+[/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/project/server2MVC/server2MVC/Views/Users/DashBoard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGFzaEJvYXJkLmNzaHRtbA==
+[/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/Views/Users/DashBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvRGFzaEJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/project/server2MVC/server2MVC/Views/Users/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
+[/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/Views/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/project/server2MVC/server2MVC/Views/Users/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
+[/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/project/server2MVC/server2MVC/Views/Users/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+[/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/project/server2MVC/server2MVC/Views/Users/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+[/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/project/server2MVC/server2MVC/Views/Users/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcTG9naW4uY3NodG1s
+[/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/Views/Users/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/project/server2MVC/server2MVC/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/project/server2MVC/server2MVC/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/project/server2MVC/server2MVC/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-4jcpjwv45n
+[/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-u9ar0zjqqf

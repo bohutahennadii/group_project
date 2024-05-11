@@ -46,61 +46,6 @@
           }
         }
       },
-      "Grpc.Core/2.46.6": {
-        "type": "package",
-        "dependencies": {
-          "Grpc.Core.Api": "2.46.6",
-          "System.Memory": "4.5.3"
-        },
-        "compile": {
-          "lib/netstandard2.0/Grpc.Core.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Grpc.Core.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/linux-arm64/native/libgrpc_csharp_ext.arm64.so": {
-            "assetType": "native",
-            "rid": "linux-arm64"
-          },
-          "runtimes/linux-x64/native/libgrpc_csharp_ext.x64.so": {
-            "assetType": "native",
-            "rid": "linux-x64"
-          },
-          "runtimes/osx-x64/native/libgrpc_csharp_ext.x64.dylib": {
-            "assetType": "native",
-            "rid": "osx-x64"
-          },
-          "runtimes/win-x64/native/grpc_csharp_ext.x64.dll": {
-            "assetType": "native",
-            "rid": "win-x64"
-          },
-          "runtimes/win-x86/native/grpc_csharp_ext.x86.dll": {
-            "assetType": "native",
-            "rid": "win-x86"
-          }
-        }
-      },
-      "Grpc.Core.Api/2.46.6": {
-        "type": "package",
-        "dependencies": {
-          "System.Memory": "4.5.3"
-        },
-        "compile": {
-          "lib/netstandard2.1/Grpc.Core.Api.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/Grpc.Core.Api.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
       "Humanizer/2.14.1": {
         "type": "package",
         "dependencies": {
@@ -3977,58 +3922,6 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
-      ]
-    },
-    "Grpc.Core/2.46.6": {
-      "sha512": "ZoRg3KmOJ2urTF4+u3H0b1Yv10xzz2Y/flFWS2tnRmj8dbKLeiJaSRqu4LOBD3ova90evqLkVZ85kUkC4JT4lw==",
-      "type": "package",
-      "path": "grpc.core/2.46.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/net45/Grpc.Core.targets",
-        "buildTransitive/net45/Grpc.Core.targets",
-        "grpc.core.2.46.6.nupkg.sha512",
-        "grpc.core.nuspec",
-        "lib/net45/Grpc.Core.dll",
-        "lib/net45/Grpc.Core.pdb",
-        "lib/net45/Grpc.Core.xml",
-        "lib/netstandard1.5/Grpc.Core.dll",
-        "lib/netstandard1.5/Grpc.Core.pdb",
-        "lib/netstandard1.5/Grpc.Core.xml",
-        "lib/netstandard2.0/Grpc.Core.dll",
-        "lib/netstandard2.0/Grpc.Core.pdb",
-        "lib/netstandard2.0/Grpc.Core.xml",
-        "packageIcon.png",
-        "runtimes/linux-arm64/native/libgrpc_csharp_ext.arm64.so",
-        "runtimes/linux-x64/native/libgrpc_csharp_ext.x64.so",
-        "runtimes/osx-x64/native/libgrpc_csharp_ext.x64.dylib",
-        "runtimes/win-x64/native/grpc_csharp_ext.x64.dll",
-        "runtimes/win-x86/native/grpc_csharp_ext.x86.dll"
-      ]
-    },
-    "Grpc.Core.Api/2.46.6": {
-      "sha512": "Z7HJGqJYyKb53qfp1jf0wRDYs3sxOnkAFxXAW6q52LLmX/zxzjtFLI9eaWO5UC0weiWjn4iT1FzR+tj9qYZAMg==",
-      "type": "package",
-      "path": "grpc.core.api/2.46.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "grpc.core.api.2.46.6.nupkg.sha512",
-        "grpc.core.api.nuspec",
-        "lib/net45/Grpc.Core.Api.dll",
-        "lib/net45/Grpc.Core.Api.pdb",
-        "lib/net45/Grpc.Core.Api.xml",
-        "lib/netstandard1.5/Grpc.Core.Api.dll",
-        "lib/netstandard1.5/Grpc.Core.Api.pdb",
-        "lib/netstandard1.5/Grpc.Core.Api.xml",
-        "lib/netstandard2.0/Grpc.Core.Api.dll",
-        "lib/netstandard2.0/Grpc.Core.Api.pdb",
-        "lib/netstandard2.0/Grpc.Core.Api.xml",
-        "lib/netstandard2.1/Grpc.Core.Api.dll",
-        "lib/netstandard2.1/Grpc.Core.Api.pdb",
-        "lib/netstandard2.1/Grpc.Core.Api.xml",
-        "packageIcon.png"
       ]
     },
     "Humanizer/2.14.1": {
@@ -11393,38 +11286,30 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Grpc.Core >= 2.46.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.18",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.18",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.12"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\makss\\.nuget\\packages\\": {},
-    "D:\\visual3\\NuGetPackages": {}
+    "/Users/voronovskiyvolodymyr/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\project\\server2MVC\\server2MVC\\server2MVC.csproj",
+      "projectUniqueName": "/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/server2MVC.csproj",
       "projectName": "server2MVC",
-      "projectPath": "D:\\project\\server2MVC\\server2MVC\\server2MVC.csproj",
-      "packagesPath": "C:\\Users\\makss\\.nuget\\packages\\",
-      "outputPath": "D:\\project\\server2MVC\\server2MVC\\obj\\",
+      "projectPath": "/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/server2MVC.csproj",
+      "packagesPath": "/Users/voronovskiyvolodymyr/.nuget/packages/",
+      "outputPath": "/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "D:\\visual3\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\makss\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/voronovskiyvolodymyr/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11448,10 +11333,6 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
-          "Grpc.Core": {
-            "target": "Package",
-            "version": "[2.46.6, )"
-          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[7.0.18, )"
@@ -11478,6 +11359,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.18, 7.0.18]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.osx-x64",
+            "version": "[7.0.18, 7.0.18]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.18, 7.0.18]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -11486,7 +11381,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/RuntimeIdentifierGraph.json"
       }
     }
   }

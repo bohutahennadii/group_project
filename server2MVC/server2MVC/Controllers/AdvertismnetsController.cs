@@ -4,7 +4,6 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.Linq;
 using System.Threading.Tasks;
-using Grpc.Core;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -60,26 +59,26 @@ namespace server2MVC.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Advertismnet advertismnet, IFormFile ImageFile)
+        public async Task<IActionResult> Create([Bind("ID,Title,Description,isActive,Photo")] Advertismnet advertismnet, IFormFile Photo)
         {
-            string fileName = Path.GetFileNameWithoutExtension(ImageFile.FileName);
-            string extension=Path.GetExtension(ImageFile.FileName);
-            fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
-            advertismnet.ImagePath = "~/Image/" + fileName;
-            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Image", fileName);
-
-            using (var stream = new FileStream(filePath, FileMode.Create))
+            if (ModelState.IsValid)
             {
-                await ImageFile.CopyToAsync(stream);
-            }
-            Random rnd = new Random();
-            int randomId = rnd.Next(100000, 999999); // Мінімальне та максимальне значення для рандомного ідентифікатора
-            advertismnet.UnicalId = randomId.ToString();
-            _context.Add(advertismnet);
+                if (Photo != null && Photo.Length > 0)
+                {
+                    var fileName = Path.GetFileName(Photo.FileName);
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Image", fileName);
+
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await Photo.CopyToAsync(fileStream);
+                    }
+
+                    advertismnet.ImagePath = Path.Combine("/Image", fileName);
+                    _context.Add(advertismnet);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
-                
-            
+                }
+            }
             return View(advertismnet);
         }
 
