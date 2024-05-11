@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/server2MVC.csproj": {}
+    "/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server2MVC/server2MVC/server2MVC.csproj": {}
   },
   "projects": {
-    "/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/server2MVC.csproj": {
+    "/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server2MVC/server2MVC/server2MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/server2MVC.csproj",
+        "projectUniqueName": "/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server2MVC/server2MVC/server2MVC.csproj",
         "projectName": "server2MVC",
-        "projectPath": "/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/server2MVC.csproj",
+        "projectPath": "/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server2MVC/server2MVC/server2MVC.csproj",
         "packagesPath": "/Users/voronovskiyvolodymyr/.nuget/packages/",
-        "outputPath": "/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/obj/",
+        "outputPath": "/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server2MVC/server2MVC/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/voronovskiyvolodymyr/.nuget/NuGet/NuGet.Config"

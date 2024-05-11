@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VfMKdSm0ag+2BjYOyShBSzKegEkB0rTIvVrxx3odlWl2ywvmqQ6gLrRD05Smfg7MK/jWKHoAwC2nUQqsYzMdHg==",
+  "dgSpecHash": "ADCqJtQCxHD+VgXL08vnTg9HIAfd8WCtZ67mYOcXWvkBZgwa/hg2gYRA1lB7wlBnxg0yOaINSodYWWG0vZGntA==",
   "success": true,
-  "projectFilePath": "/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server/server2MVC/server2MVC.csproj",
+  "projectFilePath": "/Users/voronovskiyvolodymyr/Documents/GitHub/group_project/server2MVC/server2MVC/server2MVC.csproj",
   "expectedPackageFiles": [
     "/Users/voronovskiyvolodymyr/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/voronovskiyvolodymyr/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
