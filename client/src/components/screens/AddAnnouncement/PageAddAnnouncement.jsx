@@ -1,5 +1,4 @@
 import React from 'react'
-// import Footer from '../home/footer/footer'
 
 
 function PageAddAnnouncement() {
@@ -7,8 +6,8 @@ function PageAddAnnouncement() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input type="file" onChange={handleFileChange} />
+      <form>
+        <input type="file" />
         <input type="text" />
         <input type="text" />
         <input type="tel" />

@@ -11,7 +11,7 @@ function Registr(){
         <div className={style.regWrapper}>
           <div className={style.signUp}>
               <p>Реєстрація</p>
-              <form action="" onSubmit={handleSubmit}>
+              <form action="" >
                 
                 <input type='text' id='FirstName' name='FirstName'  placeholder='Введіть ім’я' required/>
                 <input type="text" name="LastName" id="LastName"  placeholder='Введіть прізвище'  required/>
