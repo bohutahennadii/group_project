@@ -21,6 +21,10 @@
             <th>
                 @Html.DisplayNameFor(model => model.isActive)
             </th>
+            <th> 
+                @Html.DisplayNameFor(model => model.ImageFile)
+            </th>
+            
             <th></th>
         </tr>
     </thead>
@@ -36,6 +40,10 @@
             <td>
                 @Html.DisplayFor(modelItem => item.isActive)
             </td>
+            <td>
+                    <img src="@Url.Content(item.ImagePath)" alt="Image" />
+            </td>
+           
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.ID">Details</a> |

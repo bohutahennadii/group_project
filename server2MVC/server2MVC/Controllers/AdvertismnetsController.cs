@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Threading.Tasks;
+using Grpc.Core;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using server2MVC.Data;
+using server2MVC.Migrations;
 using server2MVC.Models;
 
 namespace server2MVC.Controllers
@@ -18,7 +22,9 @@ namespace server2MVC.Controllers
         {
             _context = context;
         }
+        
 
+        
         // GET: Advertismnets
         public async Task<IActionResult> Index()
         {
@@ -51,21 +57,40 @@ namespace server2MVC.Controllers
             return View();
         }
 
-        // POST: Advertismnets/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Title,Description,isActive")] Advertismnet advertismnet)
+        public async Task<IActionResult> Create(Advertismnet advertismnet, IFormFile ImageFile)
         {
-            if (ModelState.IsValid)
+            string fileName = Path.GetFileNameWithoutExtension(ImageFile.FileName);
+            string extension=Path.GetExtension(ImageFile.FileName);
+            fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+            advertismnet.ImagePath = "~/Image/" + fileName;
+            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Image", fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
             {
-                _context.Add(advertismnet);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                await ImageFile.CopyToAsync(stream);
             }
+            Random rnd = new Random();
+            int randomId = rnd.Next(100000, 999999); // Мінімальне та максимальне значення для рандомного ідентифікатора
+            advertismnet.UnicalId = randomId.ToString();
+            _context.Add(advertismnet);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                
+            
             return View(advertismnet);
         }
+
+
+
+
+
+
+
+
+
 
         // GET: Advertismnets/Edit/5
         public async Task<IActionResult> Edit(int? id)

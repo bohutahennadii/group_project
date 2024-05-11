@@ -7,6 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using server2MVC.Data;
 using server2MVC.Models;
+using Microsoft.AspNetCore.Identity;
+using System.Drawing.Text;
+
+using Microsoft.AspNetCore;
+using Microsoft.Extensions.Configuration.UserSecrets;
 
 namespace server2MVC.Controllers
 {
@@ -18,9 +23,40 @@ namespace server2MVC.Controllers
         {
             _context = context;
         }
+        public IActionResult DashBoard(User user)
+        {
+            var userId = HttpContext.Session.GetString("Id");
+            if (userId == null)
+            {
+                return RedirectToAction("Login");
+            }
+            return View(user);
+        }
+        public IActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Login(Models.Login model)
+        {
+            var user = _context.User.FirstOrDefault(u => u.Email == model.Email && u.Password == model.Password);
+            if (user != null)
+            {
+                
+                HttpContext.Session.SetString("Id", user.ID.ToString());
+                return RedirectToAction("DashBoard", user);
+            }
+            else
+            {
+                
+                // Помилка: невірний електронний лист або пароль
+                ModelState.AddModelError(string.Empty, "Невірний електронний лист або пароль");
+                return View();
 
-        // GET: Users
-        public async Task<IActionResult> Index()
+            }
+        }
+            // GET: Users
+            public async Task<IActionResult> Index()
         {
               return _context.User != null ? 
                           View(await _context.User.ToListAsync()) :
@@ -60,9 +96,14 @@ namespace server2MVC.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (user.Password != user.repeatPassword)
+                {
+                    ModelState.AddModelError("RepeatPassword", "Паролі не співпадають");
+                    return View(user);
+                }
                 _context.Add(user);
                 await _context.SaveChangesAsync();
-                return Json(new { redirectUrl = "http://localhost:5173/" }); 
+                return Redirect("http://localhost:5173/") ;
             }
             return View(user);
         }
@@ -161,3 +202,4 @@ namespace server2MVC.Controllers
         }
     }
 }
+ 

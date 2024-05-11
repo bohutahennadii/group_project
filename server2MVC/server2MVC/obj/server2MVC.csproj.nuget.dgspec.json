@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\group_project\\server2MVC\\server2MVC\\server2MVC.csproj": {}
+    "D:\\project\\server2MVC\\server2MVC\\server2MVC.csproj": {}
   },
   "projects": {
-    "D:\\group_project\\server2MVC\\server2MVC\\server2MVC.csproj": {
+    "D:\\project\\server2MVC\\server2MVC\\server2MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\group_project\\server2MVC\\server2MVC\\server2MVC.csproj",
+        "projectUniqueName": "D:\\project\\server2MVC\\server2MVC\\server2MVC.csproj",
         "projectName": "server2MVC",
-        "projectPath": "D:\\group_project\\server2MVC\\server2MVC\\server2MVC.csproj",
+        "projectPath": "D:\\project\\server2MVC\\server2MVC\\server2MVC.csproj",
         "packagesPath": "C:\\Users\\makss\\.nuget\\packages\\",
-        "outputPath": "D:\\group_project\\server2MVC\\server2MVC\\obj\\",
+        "outputPath": "D:\\project\\server2MVC\\server2MVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\visual3\\NuGetPackages"
@@ -38,12 +38,21 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Grpc.Core": {
+              "target": "Package",
+              "version": "[2.46.6, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.18, )"
@@ -78,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }

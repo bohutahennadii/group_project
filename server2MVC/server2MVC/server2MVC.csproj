@@ -7,12 +7,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\NewFolder\**" />
+    <Content Remove="wwwroot\NewFolder\**" />
+    <EmbeddedResource Remove="wwwroot\NewFolder\**" />
+    <None Remove="wwwroot\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.Core" Version="2.46.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.18" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.18">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Image\" />
+    <Folder Include="wwwroot\Image\" />
   </ItemGroup>
 
 </Project>

@@ -7,6 +7,8 @@ namespace server2MVC.Migrations
     /// <inheritdoc />
     public partial class Advertisment : Migration
     {
+        public object Photo { get; internal set; }
+
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
